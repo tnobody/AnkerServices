@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class IndexController {
     
     @ResponseBody()
-    @RequestMapping("/")
+    @RequestMapping("/you")
     public String hello() {
         return "Hello Spring";
     }
