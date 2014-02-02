@@ -1,0 +1,115 @@
+anfragen:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Anfragen
+    module:               anfragen
+    prefix_path:          /anfragen
+    column:               anfrage_id
+    with_wildcard_routes: true
+
+profil_merkliste:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfilMerkliste
+    module:               profilmerkliste
+    prefix_path:          /profilmerkliste
+    column:               merklisten_id
+    with_wildcard_routes: true
+
+profil_kompetenzen:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProfilKompetenzen
+    module:               profil_kompetenzen
+    prefix_path:          /profil_kompetenzen
+    column:               profil_id
+    with_wildcard_routes: true
+
+kompetenzkategorien:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Kompetenzkategorien
+    module:               kompetenzkategorien
+    prefix_path:          /kompetenzkategorien
+    column:               kompetenz_kategorie_id
+    with_wildcard_routes: true
+
+kompetenzen:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Kompetenzen
+    module:               kompetenzen
+    prefix_path:          /kompetenzen
+    column:               kompetenz_id
+    with_wildcard_routes: true
+
+lebenslauf:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Lebenslauf
+    module:               lebenslauf
+    prefix_path:          /lebenslauf
+    column:               ll_id
+    with_wildcard_routes: true
+
+dokumente:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Dokumente
+    module:               dokumente
+    prefix_path:          /dokumente
+    column:               id
+    with_wildcard_routes: true
+
+adressen:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Adressen
+    module:               adressen
+    prefix_path:          /adressen
+    column:               id
+    with_wildcard_routes: true
+
+profile:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Profile
+    module:               profil
+    prefix_path:          /profil
+    column:               profil_id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: sfGuardUser, action: index }
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+  
+# selbst definierte Regeln
+benutzerverwaltung:
+  url: /guard/users
+  param: { module: sfGuardUser, action: index }
+
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

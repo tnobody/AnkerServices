@@ -1,0 +1,93 @@
+sfGuardUser:
+
+  User_student1:
+    first_name:     Michael
+    last_name:      Weiß
+    email_address:  MichaelWeiss@teleworm.com
+    username:       mweiß
+    password:       test
+    is_super_admin: false
+    Groups:         [Group_student]
+    
+  User_student2:
+    first_name:     Birgit 
+    last_name:      Osterhagen
+    email_address:  BirgitOsterhagen@teleworm.com
+    username:       bosterhagen
+    password:       test
+    is_super_admin: false
+    Groups:         [Group_student]
+    
+  User_student3:
+    first_name:     Anna
+    last_name:      Koch
+    email_address:  AnnaKoch@teleworm.com
+    username:       akoch
+    password:       test
+    is_super_admin: false
+    Groups:         [Group_student]
+    
+  User_student4:
+    first_name:     Patrick 
+    last_name:      Ebersbach
+    email_address:  PatrickEbersbach@teleworm.com
+    username:       pebersbach
+    password:       test
+    is_super_admin: false
+    Groups:         [Group_student]
+    
+  User_student5:
+    first_name:     Bernd
+    last_name:      Pfeifer
+    email_address:  BerndPfeifer@teleworm.com
+    username:       bpfeifer
+    password:       test
+    is_super_admin: false
+    Groups:         [Group_student]
+
+  User_student6:
+    first_name:     Melanie
+    last_name:      Nobis
+    email_address:  melanienobis@gmail.com
+    username:       mnobis
+    password:       test
+    is_super_admin: false
+    Groups:         [Group_student]
+
+  User_student7:
+    first_name:     Tobias
+    last_name:      Schneck
+    email_address:  to.schneck@gmail.com
+    username:       tschneck
+    password:       test
+    is_super_admin: false
+    Groups:         [Group_student]
+
+  User_firma:
+    first_name:     Test
+    last_name:      Firma
+    email_address:  firma@localhost.com
+    username:       firma
+    password:       test
+    is_super_admin: false
+    Groups:         [Group_firma]
+
+sfGuardGroup:
+  Group_student:
+    name:           student
+    description:    Studenten
+    Permissions:    [Permission_student]
+  Group_firma:
+    name:           firma
+    description:    Firmen
+    Permissions:    [Permission_firma]
+
+sfGuardPermission:
+  Permission_student:
+    name:           student
+    description:    Berechtigungen für Stundenten
+  Permission_firma:
+    name:           firmen
+    description:    Berechtigungen für Firmen
+
+

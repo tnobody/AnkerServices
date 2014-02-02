@@ -1,0 +1,8 @@
+## YAML Template.
+---
+Dokumente:
+  Dok_LL_mnobis:
+    id: 1
+    profil_id: 6
+    titel: "Mein Lebenslauf"
+    pfad: "f4cbce5061299c7f61a5bb1c9794315055c19796.pdf"

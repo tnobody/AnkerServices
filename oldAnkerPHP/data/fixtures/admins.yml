@@ -1,0 +1,20 @@
+sfGuardUser:
+  User_admin:
+    first_name:     Armin
+    last_name:      Admin
+    email_address:  admin@localhost.com
+    username:       admin
+    password:       test
+    is_super_admin: true
+    Groups:         [Group_admin]
+
+sfGuardGroup:
+  Group_admin:
+    name:           admin
+    description:    Administratorengruppe
+    Permissions:    [Permission_admin]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Administratorenberechtigungen

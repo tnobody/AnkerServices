@@ -1,0 +1,37 @@
+.turn-me-into-datepicker {
+	/*float: left; fix for date label */
+	margin: 10px;
+}
+
+#multimonth {
+	border: 2px solid #000;
+	overflow: auto;
+	float: left;
+}
+.dp-applied {
+	float: left;
+}
+table.jCalendar {
+	border: none;
+}
+.dp-popup-inline {
+	height: 170px;
+}
+
+div.dp-popup {
+	position: relative;
+	background: white;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	padding: 2px;
+	width: 171px;
+	line-height: 1.2em;
+}
+
+div.dp-popup h2 {
+	font-size: 12px;
+	text-align: center;
+	margin: 2px 0;
+	padding: 0;
+        color: #5D5D5D;
+}

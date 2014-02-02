@@ -1,0 +1,49 @@
+#container {
+  width: 100%;
+  background: none; }
+
+#menu li {
+  margin-right: 15px;
+  display: inline; }
+
+#content h1 {
+  padding: 0;
+  background: transparent;
+  margin-bottom: 20px;
+  font-size: 140%;
+  color: #000; }
+
+td {
+  padding: 7px; }
+
+th {
+  padding: 7px;
+  font-weight: bold; }
+
+#footer {
+  clear: both;
+  padding: 25px;
+  margin-top: 0;
+  height: auto;
+  font-family: arial,sans-serif;
+  font-size: 80%;
+  float: right;
+  color: #666;
+  background: none;
+  img {
+    vertical-align: middle; } }
+
+#sf_admin_container fieldset h2 {
+  font-size: 110%;
+  font-family: arial,sans-serif;
+  font-style: italic; }
+
+.sf_admin_form_field_logo div div {
+  margin-left: 120px; }
+
+#sf_admin_container .sf_admin_form_field_logo div div label {
+  display: inline;
+  float: none; }
+
+#header h1 {
+  width: auto; }

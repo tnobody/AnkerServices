@@ -1,0 +1,111 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: profil, action: index }
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_signout_with_flash:
+  url:   /logout/:reason
+  param: { module: sfGuardAuth, action: signoutWithFlash }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+dokumente:
+  url:  /dokumente
+  param: { module: dokumente, action: new }
+
+dokumente_add:
+  url:  /dokumente/create
+  param: { module: dokumente, action: create }
+
+dokumente_delete:
+  url:          /dokumente/delete
+  param:        { module: dokumente, action: delete }
+  requirements:
+    id:         \d+
+    sf_method:  [delete]
+
+dokumente_gettitle:
+  url:          /dokumente/gettitle/:id
+  param:        { module: dokumente, action: getTitle }
+  requirements:
+    id:         \d+
+    sf_method:  [get]
+
+dokumente_update_title:
+  url:          /dokumente/update
+  param:        { module: dokumente, action: updateTitle }
+  requirements:
+    id:         \d+
+    title:      .+
+    sf_method:  [put]
+
+user_keepalive:
+  url:          /keepalive
+  param:        { module: static, action: keepalive }
+  requirements:
+    sf_method:  [get]
+
+kompetenzen_get_json:
+  url:          /kompetenzen/get_json
+  param:        { module: kompetenzen, action: getData }
+  requirements:
+    sf_method:  [get]
+
+kompetenzen_add:
+  url:          /kompetenzen/add
+  param:        { module: kompetenzen, action: create }
+  requirements:
+    title:      .+
+    comment:    .+
+    id:         \d+
+    niveau:     \d+
+    sf_method:  [post]
+
+kompetenzen_get_categories:
+  url:          /kompetenzen/get_categories
+  param:        { module: kompetenzen, action: getCategories }
+  requirements:
+    sf_method:  [get]
+
+kompetenzen_new:
+  url:          /kompetenzen/new
+  param:        { module: kompetenzen, action: new }
+  requirements:
+    sf_method:  [get]
+
+kompetenzen_index:
+  url:   /kompetenzen
+  param: { module: kompetenzen, action: index }
+
+niveau_edit:
+  url:          /kompetenzen/edit/:niveau_id
+  param:        { module: kompetenzen, action: edit }
+  requirements:
+    niveau_id:  \d+
+    sf_method:  [get]
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default_modaction:
+  url:   /:module/:action/*
+
+# do not remove its used for javascript global app value
+default:
+  url:   /

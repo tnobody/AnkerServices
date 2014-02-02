@@ -1,0 +1,338 @@
+/* light colors */
+/* dark colors */
+/* Breitenangaben */
+body {
+  font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: #f0efe2;
+  color: #666666;
+  overflow: scroll; }
+
+h1, h2, h3, h4, h5, h6 {
+  font: normal 175% 'century gothic', arial, sans-serif;
+  color: #43423f; }
+
+h2 {
+  color: #A4AA04; }
+
+h4, h5, h6 {
+  font: normal 120% arial, sans-serif;
+  color: #a4aa04; }
+
+h5, h6 {
+  font: italic 95% arial, sans-serif;
+  color: black; }
+
+h6 {
+  color: #362c20; }
+
+a {
+  outline: none;
+  text-decoration: underline;
+  color: #1293EE; }
+  a:hover {
+    text-decoration: none; }
+
+.left {
+  float: left;
+  width: auto;
+  margin-right: 10px; }
+
+.right {
+  float: right;
+  width: auto;
+  margin-left: 10px; }
+
+.center {
+  display: block;
+  text-align: center;
+  margin: 20px auto; }
+
+blockquote {
+  margin: 20px 0;
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: white; }
+
+ul#menu {
+  float: left;
+  margin: 0;
+  padding: 0; }
+  ul#menu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    ul#menu li a {
+      letter-spacing: 0.1em;
+      font: normal 100% 'lucida sans unicode', arial, sans-serif;
+      display: block;
+      float: left;
+      height: 37px;
+      padding: 29px 20px 6px 20px;
+      text-align: center;
+      color: #FFF;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: transparent; }
+
+ul#menu a:hover, ul#menu li.selected a, ul#menu li.selected a:hover {
+  color: #FFF;
+  background: #1c2c3e url(../images/menu_select.png) repeat-x; }
+
+#main, #logo, #menubar, #site_content, #footer {
+  margin-left: auto;
+  margin-right: auto; }
+
+#header {
+  background: #025587;
+  height: 240px; }
+
+#logo {
+  width: 825px;
+  position: relative;
+  height: 168px;
+  background: #025587 url(../images/logo.png) no-repeat; }
+  #logo h1, #logo h2 {
+    font: normal 300% 'century gothic', arial, sans-serif;
+    border-bottom: 0;
+    text-transform: none;
+    margin: 0; }
+
+#logo_text {
+  position: absolute;
+  margin-top: 50px;
+  left: 0; }
+  #logo_text h1 a, #logo_text h1 a:hover {
+    padding: 22px 0 0 0;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    text-decoration: none; }
+  #logo_text h1 a .logo_colour {
+    color: #80FFFF; }
+  #logo_text h2 {
+    font-size: 100%;
+    padding: 4px 0 0 0;
+    color: #DDD; }
+
+#menubar {
+  width: 921px;
+  height: 72px;
+  padding: 0;
+  background: #29415d url(../images/menu.png) repeat-x; }
+
+.sidebar {
+  float: right;
+  width: 200px;
+  padding: 0 15px 20px 15px; }
+  .sidebar ul {
+    width: 178px;
+    padding: 4px 0 0 0;
+    margin: 4px 0 30px 0; }
+  .sidebar li {
+    list-style: none;
+    padding: 0 0 7px 0; }
+    .sidebar li a, .sidebar li .sidebar li a:hover {
+      padding: 0 0 0 40px;
+      display: block;
+      background: transparent url(../images/link.png) no-repeat left center; }
+    .sidebar li a.selected {
+      color: #444;
+      text-decoration: none; }
+
+#site_content {
+  width: 881px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 20px 24px 20px 37px;
+  background: white url(../images/content.png) repeat-y; }
+
+#content {
+  clear: left;
+  float: left;
+  text-align: left;
+  width: 620px;
+  padding: 0; }
+
+footer {
+  margin: 0 auto;
+  width: 921px;
+  font: normal 100% 'lucida sans unicode', arial, sans-serif;
+  height: 33px;
+  padding: 24px 0 5px 0;
+  text-align: center;
+  background: #29425e url(../images/footer.png) repeat-x;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+  footer a {
+    color: #FFF;
+    text-decoration: none; }
+    footer a:hover {
+      color: #FFF;
+      text-decoration: underline; }
+
+.search {
+  color: #5D5D5D;
+  border: 1px solid #BBB;
+  width: 134px;
+  padding: 4px;
+  font: 100% arial, sans-serif; }
+
+.clear {
+  overflow: hidden;
+  width: 100%; }
+
+.form_settings {
+  margin: 0px 0 0 0; }
+  .form_settings p {
+    padding: 5px 0 5px 0;
+    margin: 0px 0 0 0; }
+    .form_settings p span {
+      float: left;
+      width: 150px;
+      text-align: left;
+      margin: 3px 0px 0px 0px; }
+  .form_settings input, .form_settings textarea {
+    padding: 5px;
+    width: 299px;
+    font: 100% arial;
+    border: 1px solid #E5E5DB;
+    background: white;
+    color: #47433F; }
+  .form_settings textarea {
+    resize: vertical; }
+  .form_settings select {
+    width: 180px; }
+  .form_settings .submit {
+    font: 100% arial;
+    border: 1px solid;
+    width: 99px;
+    cursor: pointer;
+    background: #263C56;
+    color: white;
+    text-align: center;
+    height: 33px;
+    margin: 0 0 0 213px;
+    padding: 0; }
+    .form_settings .submit[disabled] {
+      background: gray; }
+  .form_settings .submit_2 {
+    font: 100% arial;
+    border: 1px solid;
+    width: 99px;
+    cursor: pointer;
+    background: #263C56;
+    color: white;
+    text-align: center;
+    height: 33px;
+    margin: 0 0 0 113px;
+    padding: 0; }
+    .form_settings .submit_2[disabled] {
+      background: gray; }
+  .form_settings a .button {
+    font: 100% arial;
+    border: 1px solid;
+    width: 99px;
+    cursor: pointer;
+    background: #263C56;
+    color: white;
+    text-align: center;
+    height: 24px;
+    padding: 7px 0 0 0;
+    margin: 0px 0 0 -1px;
+    float: left;
+    display: block;
+    text-decoration: none; }
+    .form_settings a .button:active {
+      color: black;
+      outline: none; }
+  .form_settings .checkbox {
+    margin: 4px 0;
+    padding: 0;
+    width: 14px;
+    border: 0;
+    background: none; }
+  .form_settings #profile_geburtsdatum_day {
+    width: 50px; }
+  .form_settings #profile_geburtsdatum_month {
+    width: 70px; }
+  .form_settings #profile_geburtsdatum_year {
+    width: 60px; }
+
+.separator {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0; }
+
+/* "Winter Blues" CSS theme for CSS Table Gallery (http://icant.co.uk/csstablegallery/) by Gunta Klavina (http://www.klavina.com) */
+table {
+  font: 85% "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  color: #333333;
+  background: #f3f5f7;
+  border-bottom: 1px solid #eaecee; }
+  table a {
+    color: #3a4856;
+    text-decoration: none;
+    border-bottom: 1px solid #C6C8CB; }
+    table a:visited {
+      color: #777777; }
+    table a:hover {
+      color: black; }
+  table caption {
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font: 200%; }
+  table thead {
+    border-left: 1px solid #eaecee;
+    border-right: 1px solid #eaecee; }
+    table thead th {
+      background: #444444;
+      padding: 15px 10px;
+      color: white;
+      text-align: left;
+      font-weight: normal; }
+  table tbody {
+    border-left: 1px solid #eaecee;
+    border-right: 1px solid #eaecee; }
+    table tbody td, table tbody th {
+      padding: 10px;
+      background: url("../images/td_back.gif") repeat-x;
+      text-align: left; }
+    table tbody tr {
+      background: #f3f5f7; }
+      table tbody tr .odd {
+        background: #f0f4f6; }
+      table tbody tr:hover {
+        background: #eaecee;
+        color: #111111; }
+  table tfoot td, table tfoot th, table tfoot tr {
+    text-align: left;
+    font: 120%;
+    text-transform: uppercase;
+    background: white;
+    padding: 10px; }
+
+/* end of winter blue table css theme */
+div.clearer {
+  clear: both;
+  line-height: 0;
+  height: 0; }
+
+.js #jsnotice {
+  display: none; }
+
+.no-js #jsnotice {
+  display: block; }
+
+div.ajax-loader {
+  float: right;
+  margin-right: 15px;
+  margin-top: 5px;
+  padding-top: 2px;
+  display: none; }

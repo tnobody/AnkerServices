@@ -1,0 +1,525 @@
+KompetenzKategorien:
+  KompetenzKategorienTechnischeSkills:
+    kompetenz_kategorie_id: 1
+    bezeichnung: 'Technische Skills'
+    beschreibung: >
+      Allgemeine technische Kompetenzen
+    root_id: '1'
+    lft: '1'
+    rgt: '10'
+    level: '0'
+    aktiv:  1
+  KompetenzKategorienProgrammiersprachen:
+    kompetenz_kategorie_id: 2
+    bezeichnung: Programmiersprachen
+    beschreibung: >
+      Programmiersprachen, die Sie beherrschen
+    root_id: '1'
+    lft: '2'
+    rgt: '3'
+    level: '1'
+    aktiv:  1
+  KompetenzKategorienOffice:
+    kompetenz_kategorie_id: 3
+    bezeichnung: Office
+    beschreibung: Allgemeine Kategorie für Bürosoftware
+    root_id: '1'
+    lft: '4'
+    rgt: '5'
+    level: '1'
+    aktiv:  1
+  KompetenzKategorienServeradministration:
+    kompetenz_kategorie_id: 4
+    bezeichnung: Serveradministration
+    beschreibung: >
+      Kompetenzen bzgl. Adminstration von Serverstrukturen
+    root_id: '1'
+    lft: '6'
+    rgt: '7'
+    level: '1'
+    aktiv:  1
+  KompetenzKategorienNeueWurzel:
+    kompetenz_kategorie_id: 5
+    bezeichnung: Neue Wurzel
+    beschreibung: Dummykategorie
+    root_id: '4'
+    lft: '1'
+    rgt: '2'
+    level: '0'
+    aktiv:  0 # Vom Benutzer erstellt aber noch nicht validiert
+  KompetenzKategorienSozialkompetenz:
+    kompetenz_kategorie_id: 6
+    bezeichnung: Sozialkompetenz
+    beschreibung: >
+      Kompetenzen bzgl. sozialen Aspekten
+    root_id: '5'
+    lft: '1'
+    rgt: '2'
+    level: '0'
+    aktiv:  1
+  KompetenzKategorienTelefontechnik:
+    kompetenz_kategorie_id: 7
+    bezeichnung: Telefontechnik
+    beschreibung: >
+      Kompetenzen bzgl. Telefonie
+    root_id: '1'
+    lft: '8'
+    rgt: '9'
+    level: '1'
+    aktiv:  1
+  KompetenzKategorienSprachlich:
+    kompetenz_kategorie_id: 8
+    bezeichnung: Sprachliche Kompetenzen
+    beschreibung: >
+      Stell die vorhandenen sprachlichen Kompetenzen dar
+    root_id: '6'
+    lft: '1'
+    rgt: '2'
+    level: '0'
+    aktiv:  1
+  KompetenzKategorienBSS:
+    kompetenz_kategorie_id: 9
+    bezeichnung: Betriebswirtschaftliche Standard-SW
+    beschreibung: >
+      Kompetenzen in Betriebswirtschaftliche Standardsoftwaren
+    root_id: '1'
+    lft: '7'
+    rgt: '8'
+    level: '1'
+    aktiv:  1
+Kompetenzen:
+  #Sprachliche Kompetenzen
+  KompetenzDeutsch:
+    bezeichnung:  Deutsch
+    beschreibung: Bewertung der sprachlichen Fähigkeiten in Deutsch
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienSprachlich]
+  KompetenzEnglisch:
+    bezeichnung:  Englisch
+    beschreibung: Bewertung der sprachlichen Fähigkeiten in Englisch
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienSprachlich]
+  KompetenzFranzössisch:
+    bezeichnung:  Französisch
+    beschreibung: Bewertung der sprachlichen Fähigkeiten in Französisch
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienSprachlich]
+  KompetenzSpanisch:
+    bezeichnung:  Spanisch
+    beschreibung: Bewertung der sprachlichen Fähigkeiten in Spanisch
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienSprachlich]
+  #Office Kompetenzne  
+  KompetenzWord:
+    bezeichnung:  MS Word
+    beschreibung: Kenntnisse in den Microsoft-Produkt Word
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienOffice]
+  KompetenzExcel:
+    bezeichnung:  MS Excel
+    beschreibung: Kenntnisse in den Microsoft-Produkt Excel
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienOffice]
+  KompetenzPowerPoint:
+    bezeichnung:  MS PowerPoint
+    beschreibung: Kenntnisse in den Microsoft-Produkt PowerPoint
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienOffice]
+  KompetenzAccess:
+    bezeichnung:  MS Access
+    beschreibung: Kenntnisse in den Microsoft-Produkt Access
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienOffice]
+  KompetenzOutlook:
+    bezeichnung:  MS Outlook
+    beschreibung: Kenntnisse in den Microsoft-Produkt Outlook
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienOffice]  
+  #Kompetenzen für BSS
+  KompetenzSAP_R3:
+    bezeichnung:  SAP ERP R/3
+    beschreibung: Kenntnisse im SAP ERP R/3 - Umfeld
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienBSS]
+  KompetenzPMS:
+    bezeichnung:  PMS-System Fidelio
+    beschreibung: Kenntnisse im Property-Management-System Fidelio
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienBSS]
+  KompetenzSPSS:
+    bezeichnung:  SPSS
+    beschreibung: Kenntnisse im IBM-SPSS (Statistik- und Analyse-Software)
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienBSS]
+  KompetenzElektrotechnik:
+    bezeichnung:  Elektrotechnik
+    beschreibung: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzMesstechnik:
+    bezeichnung:  Messtechnik
+    beschreibung: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzLöten:
+    bezeichnung:  Löten
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzNetzwerktechnik:
+    bezeichnung:  Netzwerktechnik
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzLinux:
+    bezeichnung:  Linux
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzBildbearbeitung:
+    bezeichnung:  Bildbearbeitung
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzVideobearbeitung:
+    bezeichnung:  Videobearbeitung
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzScreencasts:
+    bezeichnung:  Screencasts
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzMikrocontroller:
+    bezeichnung:  Mikrocontroller
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTechnischeSkills]
+  KompetenzPHP:
+    bezeichnung:  PHP
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzHTML:
+    bezeichnung:  HTML
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzCSS:
+    bezeichnung:  CSS
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzJavaScript:
+    bezeichnung:  JavaScript
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzJava:
+    bezeichnung:  Java
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzPython:
+    bezeichnung:  Python
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzQt:
+    bezeichnung:  Qt-Framework
+    beschreibung:  Qt-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzC#:
+    bezeichnung:  C#
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzC:
+    bezeichnung:  C
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzJQuery:
+    bezeichnung:  JQuery
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzMySQL:
+    bezeichnung:  MySQL
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzRuby:
+    bezeichnung:  Ruby
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienProgrammiersprachen]
+  KompetenzVirtualisierung:
+    bezeichnung:  Virtualisierung
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienServeradministration]
+  KompetenzSozialearbeit:
+    bezeichnung:  Soziale Arbeit
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienSozialkompetenz]
+  KompetenzTelefoninstallation:
+    bezeichnung:  Telefoninstallation
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienTelefontechnik]
+  KompetenzRethorik:
+    bezeichnung:  Rethorik
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienNeueWurzel]
+  KompetenzPaedagogik:
+    bezeichnung:  Pädagogik
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienNeueWurzel]
+  KompetenzPsychologie:
+    bezeichnung:  Psychologie
+    beschreibung:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienNeueWurzel]
+
+  # Vom Benutzer erstellte aber noch nicht validierte Kompetenzen
+  KompetenzHDF:
+    bezeichnung:  HDF
+    beschreibung:  Ich bin eine nicht erwünschte Kompetenz
+    aktiv:        0
+    KompetenzKategorien: [KompetenzKategorienNeueWurzel]
+
+  ### Spezialfälle ###
+
+  # Kompetenz, die kein zugehöriges Niveau besitzt
+  KompetenzEinsam:
+    bezeichnung:  Einsame Kompetenz
+    beschreibung:   Dies ist eine Kompetenz, zu der es kein Niveau gibt
+    aktiv:        1
+    KompetenzKategorien: [KompetenzKategorienNeueWurzel]
+
+Niveaus: 
+
+  <?php for ($i = 1; $i <= 5; $i++): ?>
+
+  NiveauWord<?php echo $i ?>:
+    Kompetenzen:  [KompetenzWord]
+    niveau:       3
+    Profile:      [Profil_student<?php echo $i ?>]
+
+  <?php endfor ?>
+
+  NiveauElektrotechnik:
+    Kompetenzen:  [KompetenzElektrotechnik]
+    niveau:       3
+    Profile:      [Profil_student1]
+  NiveauMesstechnik:
+    Kompetenzen:  [KompetenzMesstechnik]
+    niveau:       2
+    Profile:      [Profil_student1]
+  NiveauLöten:
+    Kompetenzen:  [KompetenzLöten]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauLöten_2:
+    Kompetenzen:  [KompetenzLöten]
+    niveau:       2
+    Profile:      [Profil_student3]
+  NiveauNetzwerktechnik:
+    Kompetenzen:  [KompetenzNetzwerktechnik]
+    niveau:       2
+    Profile:      [Profil_student1]
+  NiveauNetzwerktechnik_2:
+    Kompetenzen:  [KompetenzNetzwerktechnik]
+    niveau:       2
+    Profile:      [Profil_student2]
+  NiveauNetzwerktechnik_3:
+    Kompetenzen:  [KompetenzNetzwerktechnik]
+    niveau:       3
+    Profile:      [Profil_student3]
+  NiveauLinux:
+    Kompetenzen:  [KompetenzLinux]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauLinux_2:
+    Kompetenzen:  [KompetenzLinux]
+    niveau:       1
+    Profile:      [Profil_student2]
+  NiveauLinux_3:
+    Kompetenzen:  [KompetenzLinux]
+    niveau:       3
+    Profile:      [Profil_student3]
+  NiveauBildbearbeitung:
+    Kompetenzen:  [KompetenzBildbearbeitung]
+    niveau:       2
+    Profile:      [Profil_student1]
+  NiveauBildbearbeitung_2:
+    Kompetenzen:  [KompetenzBildbearbeitung]
+    niveau:       2
+    Profile:      [Profil_student3]
+  NiveauVideobearbeitung:
+    Kompetenzen:  [KompetenzVideobearbeitung]
+    niveau:       2
+    Profile:      [Profil_student3]
+  NiveauScreencasts:
+    Kompetenzen:  [KompetenzScreencasts]
+    niveau:       2
+    Profile:      [Profil_student3]
+  NiveauMikrocontroller:
+    Kompetenzen:  [KompetenzMikrocontroller]
+    niveau:       4
+    Profile:      [Profil_student1]  
+  NiveauPHP:
+    Kompetenzen:  [KompetenzPHP]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauPHP_2:
+    Kompetenzen:  [KompetenzPHP]
+    niveau:       1
+    Profile:      [Profil_student2]
+  NiveauHTML:
+    Kompetenzen:  [KompetenzHTML]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauCSS:
+    Kompetenzen:  [KompetenzCSS]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauJavaScript:
+    Kompetenzen:  [KompetenzJavaScript]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauJava:
+    Kompetenzen:  [KompetenzJava]
+    niveau:       3
+    Profile:      [Profil_student1]
+  NiveauJava_2:
+    Kompetenzen:  [KompetenzJava]
+    niveau:       2
+    Profile:      [Profil_student2]
+  NiveauJava_3:
+    Kompetenzen:  [KompetenzJava]
+    niveau:       2
+    Profile:      [Profil_student3]
+  NiveauPython:
+    Kompetenzen:  [KompetenzPython]
+    niveau:       3
+    Profile:      [Profil_student1]
+  NiveauQt:
+    Kompetenzen:  [KompetenzQt]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauC#:
+    Kompetenzen:  [KompetenzC#]
+    niveau:       3
+    Profile:      [Profil_student1]
+  NiveauC:
+    Kompetenzen:  [KompetenzC]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauC_2:
+    Kompetenzen:  [KompetenzC]
+    niveau:       2
+    Profile:      [Profil_student2]
+  NiveauC_3:
+    Kompetenzen:  [KompetenzC]
+    niveau:       2
+    Profile:      [Profil_student3]
+  NiveauJQuery:
+    Kompetenzen:  [KompetenzJQuery]
+    niveau:       3
+    Profile:      [Profil_student1]
+  NiveauMySQL:
+    Kompetenzen:  [KompetenzMySQL]
+    niveau:       4
+    Profile:      [Profil_student1]
+  NiveauRuby:
+    Kompetenzen:  [KompetenzRuby]
+    niveau:       2
+    Profile:      [Profil_student1]
+  NiveauVirtualisierung:
+    Kompetenzen:  [KompetenzVirtualisierung]
+    niveau:       2
+    Profile:      [Profil_student2]
+  NiveauVirtualisierung_2:
+    Kompetenzen:  [KompetenzVirtualisierung]
+    niveau:       2
+    Profile:      [Profil_student3]
+  NiveauSozialearbeit:
+    Kompetenzen:  [KompetenzSozialearbeit]
+    niveau:       4
+    Profile:      [Profil_student2]
+  NiveauTelefoninstallation:
+    Kompetenzen:  [KompetenzTelefoninstallation]
+    niveau:       3
+    Profile:      [Profil_student3]  
+  NiveauRethorik:
+    Kompetenzen:  [KompetenzRethorik]
+    niveau:       3
+    Profile:      [Profil_student3] 
+  NiveauPaedagogik:
+    Kompetenzen:  [KompetenzPaedagogik]
+    niveau:       4
+    Profile:      [Profil_student3] 
+  NiveauPsychologie:
+    Kompetenzen:  [KompetenzPsychologie]
+    niveau:       4
+    Profile:      [Profil_student3] 
+  #Niveaus für unser mnobis:
+  NiveauSpache1_mnobis:
+    Kompetenzen:  [KompetenzDeutsch]
+    niveau:       5
+    Profile:      [Profil_student6]
+  NiveauSpache2_mnobis:
+    Kompetenzen:  [KompetenzEnglisch]
+    niveau:       4
+    Profile:      [Profil_student6] 
+  NiveauSpache3_mnobis:
+    Kompetenzen:  [KompetenzSpanisch]
+    niveau:       2
+    Profile:      [Profil_student6] 
+  NiveauOffice1_mnobis:
+    Kompetenzen:  [KompetenzWord]
+    niveau:       3
+    Profile:      [Profil_student6] 
+  NiveauOffice2_mnobis:
+    Kompetenzen:  [KompetenzExcel]
+    niveau:       3
+    Profile:      [Profil_student6]    
+  NiveauOffice3_mnobis:
+    Kompetenzen:  [KompetenzPowerPoint]
+    niveau:       3
+    Profile:      [Profil_student6]
+  NiveauOffice4_mnobis:
+    Kompetenzen:  [KompetenzAccess]
+    niveau:       3
+    Profile:      [Profil_student6]
+  NiveauOffice5_mnobis:
+    Kompetenzen:  [KompetenzOutlook]
+    niveau:       3
+    Profile:      [Profil_student6]
+  NiveauBSS1_mnobis:
+    Kompetenzen:  [KompetenzSAP_R3]
+    niveau:       3
+    Profile:      [Profil_student6]
+  NiveauBSS2_mnobis:
+    Kompetenzen:  [KompetenzPMS]
+    niveau:       4
+    Profile:      [Profil_student6]
+  NiveauBSS3_mnobis:
+    Kompetenzen:  [KompetenzSPSS]
+    niveau:       3
+    Profile:      [Profil_student6]
+    
+  # Niveaus durch den User kürzlich angelegt und noch nicht validiert
+  NiveauHDF:
+    Kompetenzen:  [KompetenzHDF]
+    niveau:       5
+    Profile:      [Profil_student1]
+    
+

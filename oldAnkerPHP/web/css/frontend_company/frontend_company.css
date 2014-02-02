@@ -1,0 +1,147 @@
+/* 
+    Document   : frontend_company.css
+    Created on : 06.11.2010, 14:34:59
+    Author     : mahadi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+ul.kompetenzen_search_resultlist {
+  width: 600px;
+  padding: 0px;
+  color: #383838; }
+
+li.profil_item {
+  list-style-type: none;
+  background-color: #F5F5F5;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  width: 600px;
+  /*height: 120px;    */
+  -moz-border-radius: 5px;
+  /* Firefox */
+  -webkit-border-radius: 5px;
+  /* Safari, Chrome */
+  -khtml-border-radius: 5px;
+  /* Konqueror */
+  border-radius: 5px;
+  /* CSS3 */
+  behavior: url(border-radius.htc); }
+  li.profil_item:hover {
+    background-color: #e2f0ff; }
+
+div.profil_item_availability {
+  width: 450px;
+  float: left;
+  margin: 10px 0px 10px 20px; }
+  div.profil_item_availability ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px; }
+    div.profil_item_availability ul li {
+      display: block;
+      float: left;
+      margin-left: 5px;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #BBBBBB;
+      background-color: #d6d6d6;
+      text-align: center;
+      color: #7D7D7D; }
+      div.profil_item_availability ul li.low {
+        /*background-color: #F0EEC6;*/ }
+      div.profil_item_availability ul li.medium {
+        background-color: #F0EEC6;
+        /* #CEF7B2 */ }
+      div.profil_item_availability ul li.high {
+        background-color: #91DE72;
+        border-color: #7D7D7D;
+        color: #444444; }
+      div.profil_item_availability ul li p.day {
+        background-color: #BBBBBB;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #7D7D7D; }
+      div.profil_item_availability ul li span.value {
+        font-size: 100%;
+        color: #444444;
+        vertical-align: middle;
+        line-height: 30px; }
+      div.profil_item_availability ul li span.high {
+        font-weight: bold;
+        font-size: 140%; }
+
+div.profil_item_hitrate {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #e2e2e2;
+  margin: 10px 10px 25px 0px;
+  -moz-border-radius: 5px;
+  /* Firefox */
+  -webkit-border-radius: 5px;
+  /* Safari, Chrome */
+  -khtml-border-radius: 5px;
+  /* Konqueror */
+  border-radius: 5px;
+  /* CSS3 */
+  behavior: url(border-radius.htc);
+  border: 1px solid #a9a9a9; }
+  div.profil_item_hitrate.low {
+    /*background-color: #F2F38B;*/ }
+  div.profil_item_hitrate.medium {
+    background-color: #F0EEC6; }
+  div.profil_item_hitrate.high {
+    background-color: #93DD6F;
+    font-size: 140%; }
+
+div.profil_item_kompetenzen {
+  clear: left;
+  margin: 0px 25px 0px 25px;
+  font-size: 90%; }
+  div.profil_item_kompetenzen span.label {
+    color: #7D7D7D;
+    text-decoration: underline; }
+  div.profil_item_kompetenzen ul {
+    list-style-type: none;
+    padding: 0px; }
+    div.profil_item_kompetenzen ul ul.niveausstufen {
+      margin: 0px; }
+    div.profil_item_kompetenzen ul li {
+      display: inline;
+      font-size: 110%; }
+
+div.profil_item_contact_text fieldset {
+  border: none; }
+div.profil_item_contact_text textarea {
+  width: 100%;
+  height: 150px; }
+
+div.profil_item_remember_this {
+  margin: 5px 0px 10px 20px;
+  font-size: 90%; }
+
+div.profil_item_contact {
+  float: left;
+  margin: 5px 0px 10px 25px;
+  font-size: 90%; }
+
+div.profil_item_actions {
+  float: right;
+  margin: 5px 25px 10px 25px;
+  font-size: 90%; }
+
+div.profil_item_kompetenzen_searched {
+  margin: 5px 0px 10px 25px;
+  font-weight: bold; }
+  div.profil_item_kompetenzen_searched span.label {
+    font-size: 90%;
+    font-weight: normal;
+    text-decoration: underline; }
+
+div.clearer {
+  clear: both;
+  line-height: 0;
+  height: 0; }

@@ -1,0 +1,3 @@
+<td colspan="6">
+  <?php echo __('%%anfrage_id%% - %%sf_guard_user_id%% - %%kommentar%% - %%profil_id%% - %%angelegt%% - %%letzte_aenderung%%', array('%%anfrage_id%%' => link_to($anfragen->getAnfrageId(), 'anfragen_edit', $anfragen), '%%sf_guard_user_id%%' => $anfragen->getSfGuardUserId(), '%%kommentar%%' => $anfragen->getKommentar(), '%%profil_id%%' => $anfragen->getProfilId(), '%%angelegt%%' => false !== strtotime($anfragen->getAngelegt()) ? format_date($anfragen->getAngelegt(), "f") : '&nbsp;', '%%letzte_aenderung%%' => false !== strtotime($anfragen->getLetzteAenderung()) ? format_date($anfragen->getLetzteAenderung(), "f") : '&nbsp;'), 'messages') ?>
+</td>

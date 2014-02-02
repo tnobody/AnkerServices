@@ -1,0 +1,11 @@
+Verfuegbarkeit:
+
+  # be careful: dont forget the "\n" if \?> ends the line
+  <?php for ($i = 1; $i <= 77; $i++): ?>
+
+  Verfuegbarkeit<?php echo $i ?>:
+    datum:        '<?php echo date_format(date_add(date_create(), date_interval_create_from_date_string($i.' days')), 'Y-m-d')."'\n" ?>
+    stundenzahl:  <?php echo ($i % 8)."\n" ?>
+    Profile:      [Profil_student<?php echo (rand(0, $i) % 5) + 1 ?>]
+
+  <?php endfor ?>

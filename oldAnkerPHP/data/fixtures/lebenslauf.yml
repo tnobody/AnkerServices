@@ -1,0 +1,102 @@
+## YAML Template.
+---
+Lebenslauf:
+  LL_mnobis_1:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      MSc Tourism and Regional Planning- Management and Geography
+    beschreibung: Master-Studium an der Katholischen Universität Eichstätt-Ingolstadt
+    art_id:       1
+    beginn:       '2011-10-01'
+    #ende:         '1984-02-01'
+    aktiv:        1
+  
+  LL_mnobis_2:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      BA International Tourism Management
+    beschreibung: >
+      Bachelor-Studium an der 
+      Fachhochschule Westküste in Heide, Abschluss: 1,7 - 
+      Schwerpunkte: Hospitality Management und Controlling
+    art_id:       1
+    beginn:       '2009-07-01'
+    ende:         '2010-08-01'
+    aktiv:        1
+    
+  LL_mnobis_3:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      Praktikum im Horch Museum Zwickau GmbH
+    beschreibung: >
+      
+    art_id:       2
+    beginn:       '2012-02-01'
+    ende:         '2012-04-01'
+    aktiv:        1
+  
+  LL_mnobis_4:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      Praxissemester im Ausland als Assistant Event Manager
+    beschreibung: >
+      Praxissemester im Ausland im Novotel Barcelona Cornellà, Spanien
+    art_id:       2
+    beginn:       '2009-03-01'
+    ende:         '2009-09-01'
+    aktiv:        1
+  
+  LL_mnobis_5:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      Angestellt als Front Office Agent im Le Méridien Wien, Österreich
+    beschreibung: >
+      
+    art_id:       6
+    beginn:       '2010-11-01'
+    ende:         '2011-09-01'
+    aktiv:        1
+    
+  LL_mnobis_6:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      Angestellt in der Brasserie Conrad in Heide
+    beschreibung: >
+      
+    art_id:       7
+    beginn:       '2010-03-01'
+    ende:         '2010-07-01'
+    aktiv:        1
+  
+  LL_mnobis_7:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      Angestellt im Restaurant Österegg des Ringhotel Berlin in Heide
+    beschreibung: >
+      
+    art_id:       7
+    beginn:       '2008-06-01'
+    ende:         '2010-03-01'
+    aktiv:        1
+    
+  LL_mnobis_8:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      Ausbildung zur Hotelfachfrau
+    beschreibung: >
+      Ausbildung zur Hotelfachfrau im  Dorint Resort & Spa im Ostseebad Wustrow, Abschluss: Gut
+    art_id:       4
+    beginn:       '2004-08-01'
+    ende:         '2007-07-01'
+    aktiv:        1
+    
+  LL_mnobis_9:
+    Profile:      [Profil_student6]
+    bezeichnung:  >
+      Erwerb der Allgemeinen Hochschulreife (2,2)
+    beschreibung: >
+      im Lessing – Gymnasium in Hohenstein-Ernstthal
+    art_id:       3
+    beginn:       '2004-07-02'
+    ende:         '1996-08-01'
+    aktiv:        1

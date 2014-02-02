@@ -1,0 +1,14 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=an00027'
+      username: an00027
+      password: '8nzYWZ,Nndx7M8sQ'
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=an00027_test'
+      username: an00027
+      password: '8nzYWZ,Nndx7M8sQ'

@@ -1,0 +1,8 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  sf_guard_plugin:
+    success_signin_url:      benutzerverwaltung
+    #success_signout_url:     module/action         # the plugin use the referer as default

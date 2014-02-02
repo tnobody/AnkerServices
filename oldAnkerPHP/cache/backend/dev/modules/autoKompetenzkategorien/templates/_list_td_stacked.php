@@ -1,0 +1,3 @@
+<td colspan="8">
+  <?php echo __('%%kompetenz_kategorie_id%% - %%bezeichnung%% - %%beschreibung%% - %%aktiv%% - %%root_id%% - %%lft%% - %%rgt%% - %%level%%', array('%%kompetenz_kategorie_id%%' => link_to($kompetenzkategorien->getKompetenzKategorieId(), 'kompetenzkategorien_edit', $kompetenzkategorien), '%%bezeichnung%%' => $kompetenzkategorien->getBezeichnung(), '%%beschreibung%%' => $kompetenzkategorien->getBeschreibung(), '%%aktiv%%' => $kompetenzkategorien->getAktiv(), '%%root_id%%' => $kompetenzkategorien->getRootId(), '%%lft%%' => $kompetenzkategorien->getLft(), '%%rgt%%' => $kompetenzkategorien->getRgt(), '%%level%%' => $kompetenzkategorien->getLevel()), 'messages') ?>
+</td>

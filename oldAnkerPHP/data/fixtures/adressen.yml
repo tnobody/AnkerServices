@@ -1,0 +1,32 @@
+Adressen:
+  Adresse_TS_1:
+    alias:              Wohnung Ingolstadt
+    strasse_und_hausnr: Sambergerstraße 2a
+    plz:                85053
+    ort:                Ingolstadt
+    land:               Deutschland
+    profil_id:          7
+   
+  Adresse_TS_2:
+    alias:              Arbeit - Audi Ingolstadt
+    strasse_und_hausnr: Pascalstraße 4
+    plz:                85055
+    ort:                Ingolstadt
+    land:               Deutschland
+    profil_id:          7
+
+  Adresse_TS_3:
+    alias:              Wohnort Eltern
+    strasse_und_hausnr: Langenaltheimer Str. 5
+    plz:                86653
+    ort:                Monheim
+    land:               Deutschland
+    profil_id:          7
+
+  Adresse_mnobis_1:
+    alias:              Kontaktadresse
+    strasse_und_hausnr: Hofer Str. 155
+    plz:                09353
+    ort:                Oberlungwitz
+    land:               Deutschland
+    profil_id:          6

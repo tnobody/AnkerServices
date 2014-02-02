@@ -1,0 +1,189 @@
+/* light colors */
+$light_border: #E5E5DB; 
+$porcelain: #EAECEE;
+
+#kompetenzbaum_search {
+  padding-top: 15px;
+  margin-bottom: 15px;
+  clear: left; }
+
+#kompetenzbaum_left {
+  width: 280px;
+  float: left;
+  clear: left; }
+
+#kompetenz_details {
+  width: 320px;
+  float: right;
+  clear: right;
+  //margin-top: 15px;
+ }
+
+#unter_ueberschrift_kompetenzbaum, #unter_ueberschrift_kompetenz_anzeige, #unter_ueberschrift_kompetenz_erstellen{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0px 15px 0px;
+    color: #A4AA04;
+ }
+ 
+ #unter_ueberschrift_kompetenz_erstellen{
+    display: none;
+ }
+ 
+#kompetenz_details_beschreibung {
+  height: 60px; }
+
+#kompetenz_details label, #kompetenzbaum_search label, #kompetenz_details_anzeige_bezeichnung {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px 0; 
+  cursor: auto; }
+  
+
+#kompetenz_details_action {
+  margin: 10px 0 0 5px; 
+  float: right; }
+
+#kompetenz_details {
+  fieldset {
+    border: 1px solid #E5E5DB;
+    //width: 300px;
+    padding: 5px; }
+  .kompetenz_details_niveau_beschreibung {
+    padding: 0px 0px 5px 5px;
+    color: #777777; }
+  input[type=radio] {
+    margin: 5px;
+    height: 1em; }
+  span {
+    margin-bottom: 5px;
+    font-size: 1em; 
+    font-weight: bold;
+    vertical-align: 17%;
+   } }
+
+#kompetenzbaum_search_num_results {
+  display: none;
+  margin: 15px 3px;
+  width: 280px; }
+
+#kompetenzbaum_search_search_button {
+  margin: 0px 0px 0px 3px; }
+
+#search_keywords {
+  width: 280px; }
+
+#text2 {
+  width: 280px;
+  margin-bottom: 10px; }
+
+#kompetenz_details {
+  display: none;
+  input[type=text][disabled=disabled], textarea[disabled=disabled] {
+    color: #777777;
+    border: 1px solid #E5E5DB; }
+  .focused {
+    border: 1px solid #777777; } }
+ 
+#kompetenz_details_anzeige_beschreibung{
+  height: 60px;
+  //width: 200px;
+  margin-bottom: 10px;
+  overflow: auto; 
+}
+
+#kompetenz_details_kategorie {
+  width: 200px; }
+
+#kompetenzform_kategorie_new_link {
+  vertical-align: sub;
+  margin-left: 15px; }
+
+#kompetenz_details_kompetenz_neu, #kompetenz_details_kategorie_div, {
+  display: none; }
+
+#kompetenz_details_kategorie_neu {
+  display: none;
+  margin-top: 5px;
+  label {
+    display: inline;
+    margin: 5px 0; }
+  input[type=text] {
+    margin-top: 5px; } }
+
+#kompetenzform_kategorie_abbort_link {
+  margin-left: 95px; }
+
+#kompetenzbaum {
+  .jstree-leaf.komp > a {
+    color: black;
+    ins {
+    background-position: -2px -19px; }
+  }
+  .mine a {
+    background-color: Moccasin;
+  }
+  a.jstree-search {
+    color: green;
+  }
+}
+
+span.mine {
+  background-color: Moccasin;
+}
+
+#kompetenz_details_kategorie_field {
+  float: left;
+}
+
+#ajax-loader {
+  float: left;
+  width: 180px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+div.niveaufield {
+  border: 1px solid $light_border;
+  overflow: hidden;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  ul.niveaulist {
+      margin: 0;
+      padding: 0;
+    li {
+      list-style: none outside none;
+      margin: 3px;
+      padding: 5px;
+      width: 570px;
+      div.head {
+        div.name {
+          font-weight: bold;
+          font-size: 1.2em;
+          color: #43423F;
+          margin: 10px;
+          float: left;
+        }
+        div.info {
+          float: right;
+          margin: 10px 0px 10px 10px;
+          text-align: right;
+          color: #CC3333;
+        }
+      }
+      div.description {
+        padding-left: 10px;
+        clear: left;
+      }
+      &:hover {
+        background: $porcelain;
+      }
+    }
+  }
+  h3 {
+    margin: 5px;
+  }
+}

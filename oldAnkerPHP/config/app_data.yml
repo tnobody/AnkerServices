@@ -1,0 +1,17 @@
+Niveaustufen:
+  '1':
+    Bezeichnung: 1 - Theoretische Grundkenntnisse
+    Beschreibung: > 
+      Sie haben die theoretischen Grundlagen erlernt und verstanden, diese aber noch nicht in der Praxis angewandt. 
+  '2':
+    Bezeichnung: 2 - Praktische Grundkenntnisse
+    Beschreibung: Sie haben bereits erste Praxiserfahrungen gesammelt.
+  '3':
+    Bezeichnung: 3 - Praxiserfahrung
+    Beschreibung: Sie haben über einen längeren Zeitraum praktische Kenntnisse erworben.
+  '4':
+    Bezeichnung: 4 - Vertiefte(s) Fachwissen/Praxiserfahrung
+    Beschreibung: Sie haben sowohl tiefergehnde Fertigkeiten in der Praxis als auch ausgeprägte Kenntnisse in der Theorie gesammelt.
+  '5':
+    Bezeichnung: 5 - Experte
+    Beschreibung: Sie sind ein absoluter Experte auf diesem Gebiet.

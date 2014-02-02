@@ -1,0 +1,6 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  javascripts:    [jquery-1.6.4.min.js, jquery-ui-1.8.4.custom.min.js, jquery.jstree.js, jqueryFormValidator/jquery.validationEngine.js, jqueryFormValidator/locales/jquery.validationEngine-de.js]
+  stylesheets:    [main.css, frontend_employee/frontend_employee.css, smoothness/jquery-ui-1.8.4.custom.css, idletimeout.css, jqueryFormValidator/validationEngine.jquery.css]

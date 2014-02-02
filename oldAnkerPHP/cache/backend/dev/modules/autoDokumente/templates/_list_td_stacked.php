@@ -1,0 +1,3 @@
+<td colspan="6">
+  <?php echo __('%%id%% - %%profil_id%% - %%titel%% - %%angelegt%% - %%letzte_aenderung%% - %%pfad%%', array('%%id%%' => link_to($dokumente->getId(), 'dokumente_edit', $dokumente), '%%profil_id%%' => $dokumente->getProfilId(), '%%titel%%' => $dokumente->getTitel(), '%%angelegt%%' => false !== strtotime($dokumente->getAngelegt()) ? format_date($dokumente->getAngelegt(), "f") : '&nbsp;', '%%letzte_aenderung%%' => false !== strtotime($dokumente->getLetzteAenderung()) ? format_date($dokumente->getLetzteAenderung(), "f") : '&nbsp;', '%%pfad%%' => $dokumente->getPfad()), 'messages') ?>
+</td>

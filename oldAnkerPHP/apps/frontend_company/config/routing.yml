@@ -1,0 +1,70 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: profil_merkliste, action: index }
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+profil_merkliste_add:
+  url:          /favoriten/add/:id/:query
+  param:        { module: profil_merkliste, action: create }
+  requirements:
+    id:         \d+
+    sf_method:  [post]
+
+profil_merkliste_remove:
+  url:          /favoriten/delete/:id
+  param:        { module: profil_merkliste, action: delete }
+  requirements:
+    id:         \d+
+    sf_method:  [delete]
+
+profil_merkliste:
+  url:          /favoriten/
+  param:        { module: profil_merkliste, action: index }
+
+anfrage_add:
+  url:          /favoriten/request/:id
+  param:        { module: anfragen, action: create }
+  requirements:
+    id:         \d+
+    sf_method:  [post]
+
+anfrage_delete:
+  url:          /anfragen/delete/:id
+  param:        { module: anfragen, action: delete }
+  requirements:
+    id:         \d+
+    sf_method:  [delete]
+
+kompetenzen_search:
+  url:          /kompetenzen/search
+  param:        { module: kompetenzen, action: search }
+
+kompetenzen_suggest:
+  url:          /kompetenzen/suggest
+  param:        { module: kompetenzen, action: suggest }
+
+# generic rules
+# please, remove them by adding more specific rules
+#default_index:
+#  url:   /:module
+#  param: { action: index }
+#
+
+# just for javascripts, do not remove
+default:
+  url:   /

@@ -1,0 +1,37 @@
+/* 
+    Document   : idletimeout.css
+    Created on : 12.12.2011, 18:03:23
+    Author     : mahadi
+    Description:
+        Styles the idletimeout stuff
+*/
+
+#idletimeout { 
+    background:#CC5100; 
+    border:3px solid #FF6500; 
+    color:#fff; 
+    font-family:arial, sans-serif; 
+    text-align:center; 
+    font-size:12px; 
+    padding:10px; 
+    position:relative; 
+    top:0px; 
+    left:0; 
+    right:0; 
+    z-index:100000; 
+    display:none; 
+}
+#idletimeout a { 
+    color:#fff; 
+    font-weight:bold 
+}
+#idletimeout span { 
+    font-weight:bold 
+}
+
+#dialog {
+    display: none;
+}
+
+#idletimeout a.ui-dialog-titlebar-close { display:none }
+

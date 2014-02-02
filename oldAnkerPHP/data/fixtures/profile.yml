@@ -1,0 +1,77 @@
+Profile:
+  Profil_student1:
+    vornamen:       Michael
+    nachname:       Weiß
+    geburtsdatum:   '1983-02-01'
+    geschlecht:     männlich
+    geburtsort:     Stuttgart
+    geburtsland:    Deutschland
+    nationalitaet:  deutsch
+    aktiv:          1
+    sfGuardUser:    [User_student1]
+    
+  Profil_student2:    
+    vornamen:       Birgit
+    nachname:       Osterhagen
+    geburtsdatum:   '1983-02-01'
+    geschlecht:     weiblich
+    geburtsort:     Stuttgart
+    geburtsland:    Deutschland
+    nationalitaet:  deutsch
+    aktiv:          1
+    sfGuardUser:    [User_student2]
+    
+  Profil_student3:
+    vornamen:       Anna
+    nachname:       Koch
+    geburtsdatum:   '1983-02-01'
+    geschlecht:     weiblich
+    geburtsort:     Stuttgart
+    geburtsland:    Deutschland
+    nationalitaet:  deutsch
+    aktiv:          1
+    sfGuardUser:    [User_student3]
+    
+  Profil_student4:
+    vornamen:       Patrick
+    nachname:       Ebersbach
+    geburtsdatum:   '1983-02-01'
+    geschlecht:     männlich
+    geburtsort:     Stuttgart
+    geburtsland:    Deutschland
+    nationalitaet:  deutsch
+    aktiv:          1
+    sfGuardUser:    [User_student4]
+    
+  Profil_student5:
+    vornamen:       Bernd
+    nachname:       Pfeifer
+    geburtsdatum:   '1983-02-01'
+    geschlecht:     männlich
+    geburtsort:     Stuttgart
+    geburtsland:    Deutschland
+    nationalitaet:  deutsch
+    aktiv:          1
+    sfGuardUser:    [User_student5]
+
+  Profil_student6:
+    vornamen:       Melanie
+    nachname:       Nobis
+    geburtsdatum:   '1985-07-09'
+    geschlecht:     weiblich
+    geburtsort:     Lichtenstein (Sachsen)
+    geburtsland:    Deutschland
+    nationalitaet:  deutsch
+    aktiv:          1
+    sfGuardUser:    [User_student6]
+
+  Profil_student7:
+    vornamen:       Tobias
+    nachname:       Schneck
+    geburtsdatum:   '1987-06-17'
+    geschlecht:     männlich
+    geburtsort:     Neuburg a. d. Donau
+    geburtsland:    Deutschland
+    nationalitaet:  deutsch
+    aktiv:          1
+    sfGuardUser:    [User_student7]

@@ -1,0 +1,851 @@
+Adressen:
+  actAs:
+    Timestampable:
+      created:
+        name: angelegt
+      updated:
+        name: letzte_aenderung
+    Geographical:
+  connection: doctrine
+  tableName: adressen
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    alias:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    strasse_und_hausnr:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    plz:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    ort:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    land:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    letzte_aenderung:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+  relations:
+    Profile:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: one
+Anfragen:
+  actAs:
+    Timestampable:
+      created:
+        name: angelegt
+      updated:
+        name: letzte_aenderung
+  connection: doctrine
+  tableName: anfragen
+  columns:
+    anfrage_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true   
+    sf_guard_user_id:
+      type: bigint(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    kommentar:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    angelegt:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    letzte_aenderung:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+  relations:
+    sfGuardUser:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: sf_guard_user_id
+      foreign: id
+      type: one
+      foreignType: one
+    Profile:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: one
+      foreignType: one
+Dokumente:
+  actAs:
+    Timestampable:
+      created:
+        name: angelegt
+      updated:
+        name: letzte_aenderung
+  connection: doctrine
+  tableName: dokumente
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    titel:
+      type: string(75)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    angelegt:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    letzte_aenderung:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    pfad:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Profile:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: one
+KompetenzErworbenBei:
+  connection: doctrine
+  tableName: kompetenz_erworben_bei
+  columns:
+    ll_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    niveau_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false 
+KompetenzKategorien:
+  actAs: 
+    NestedSet: 
+      hasManyRoots: true
+  connection: doctrine
+  tableName: kompetenz_kategorien
+  columns:
+    kompetenz_kategorie_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    bezeichnung:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    beschreibung:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false 
+    aktiv:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      default: 0
+      autoincrement: false
+  relations:
+    Kompetenzen:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: kompetenz_kategorie_id
+      foreign: kompetenz_kategorie_id
+      type: many
+Kompetenzen:
+  actAs:
+    Timestampable:
+      created:
+        name: angelegt
+      updated:
+        name: letzte_aenderung
+  connection: doctrine
+  tableName: kompetenzen
+  columns:
+    kompetenz_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    bezeichnung:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false  
+    beschreibung:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false  
+    kompetenz_kategorie_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    aktiv:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      default: 0
+      autoincrement: false
+    letzte_aenderung:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+  relations:
+    KompetenzKategorien:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: kompetenz_kategorie_id
+      foreign: kompetenz_kategorie_id
+      type: one
+Lebenslauf:
+  actAs:
+    Timestampable:
+      created:
+        name: angelegt
+      updated:
+        name: letzte_aenderung
+  connection: doctrine
+  tableName: lebenslauf
+  columns:
+    ll_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    bezeichnung:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    beschreibung:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    letzte_aenderung:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    art_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    beginn:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ende:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    aktiv:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Profile:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: one
+    LebenslaufKategorien:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: art_id
+      foreign: art_id
+      type: one    
+    Niveaus:      
+      class: Niveaus
+      local: ll_id
+      foreign: niveau_id
+      refClass: KompetenzErworbenBei
+      type: many
+LebenslaufKategorien:
+  connection: doctrine
+  tableName: lebenslauf_kategorien
+  columns:
+    art_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    bezeichnung:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Lebenslauf:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: art_id
+      foreign: art_id
+      type: many
+Niveaus:
+  actAs:
+    Timestampable:
+      created:
+        name: angelegt
+      updated:
+        name: letzte_aenderung
+  connection: doctrine
+  tableName: niveaus
+  columns:
+    niveau_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    kompetenz_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    zertifikat_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    erwerb_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    art_kompetenzerwerb:
+      type: text()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      default: ''
+      autoincrement: false
+    niveau:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+      range: [1, 5]
+  relations:
+    Profile:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: one
+    Kompetenzen:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: kompetenz_id
+      foreign: kompetenz_id
+      type: one
+    Zertifikate:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: zertifikat_id
+      foreign: zertifikat_id
+      type: one
+    OrteKompetenzerwerb:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: erwerb_id
+      foreign: erwerb_id
+      type: one
+    Lebenslauf:
+      class: Lebenslauf
+      local: niveau_id
+      foreign: ll_id
+      refClass: KompetenzErworbenBei
+OrteKompetenzerwerb:
+  connection: doctrine
+  tableName: orte_kompetenzerwerb
+  columns:
+    erwerb_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    bezeichnung:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Niveaus:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: erwerb_id
+      foreign: erwerb_id
+      type: many
+Profile:
+  actAs:
+    Timestampable:
+      created:
+        name: angelegt
+      updated:
+        name: letzte_aenderung
+  connection: doctrine
+  tableName: profile
+  columns:
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    vornamen:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nachname:
+      type: string(60)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    geburtsdatum:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    geschlecht:
+      type: enum
+      values: ['männlich', 'weiblich']
+      primary: false
+      notnull: true
+    angelegt:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    letzte_aenderung:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    aktiv:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    geburtsort:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    geburtsland:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nationalitaet:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sf_guard_user_id:
+      type: bigint(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    kontaktadresse:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Adressen:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: many
+    Dokumente:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: many
+    Niveaus:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: many
+    Lebenslauf:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: many
+    ProfilMerkliste:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: many
+    Verfuegbarkeit:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: many
+    sfGuardUser:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: sf_guard_user_id
+      foreign: id
+      type: one
+      foreignType: one
+ProfilMerkliste:
+  actAs:
+    Timestampable:
+      created:
+        name: angelegt
+      updated:
+        name: letzte_aenderung
+  connection: doctrine
+  tableName: profile_merkliste
+  columns:
+    merklisten_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true    
+    query:
+      type: string
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    angelegt:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    letzte_aenderung:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    sf_guard_user_id:
+      type: bigint(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    sfGuardUser:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: sf_guard_user_id
+      foreign: id
+      type: one
+      foreignType: one
+    Profile:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: one
+      foreignType: one
+Verfuegbarkeit:
+  connection: doctrine
+  tableName: verfuegbarkeit
+  columns:
+    datum:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    stundenzahl:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    zeitraum:
+      type: text()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    anmerkung:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Profile:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: one
+Zertifikate:
+  connection: doctrine
+  tableName: zertifikate
+  columns:
+    zertifikat_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    bezeichnung:
+      type: string(75)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    profil_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    beschreibung:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    link:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Profile:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: profil_id
+      foreign: profil_id
+      type: one
+    Niveaus:
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      local: zertifikat_id
+      foreign: zertifikat_id
+      type: many

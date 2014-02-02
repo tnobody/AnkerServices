@@ -1,0 +1,23 @@
+LebenslaufKategorien:
+  KatStudium:
+    bezeichnung: Studium
+  KatPrakt:
+    bezeichnung: Praktikum
+  KatSchulausbildung:
+    bezeichnung: Schulausbildung
+  KatBerufsausbildung:
+    bezeichnung: Berufsausbildung
+  KatAusland:
+    bezeichnung: Auslandsaufenthalt
+  KatBeruf:
+    bezeichnung: Berufliche Tätigkeit
+  KatNebBeruf:
+    bezeichnung: Nebenberufliche Tätigkeit
+  KatWehrdienst:
+    bezeichnung: Wehrdienst
+  KatZivildienst:
+    bezeichnung: Zivildienst
+  KatFSK:
+    bezeichnung: Freiwilliges Soziales/Ökologisches Jahr
+
+

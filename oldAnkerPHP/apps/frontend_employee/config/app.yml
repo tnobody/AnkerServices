@@ -1,0 +1,15 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  sf_guard_plugin:
+    success_signin_url: profil/index
+  # Für jedes vom Benutzer hochgeladene Dokument werden folgende Varianten erstellt
+  .array:
+    dokumente_image_versions:
+      thumbnail:
+        upload_dir: thumbnails/
+        upload_url: thumbnails/
+        max_width:  80
+        max_height: 80

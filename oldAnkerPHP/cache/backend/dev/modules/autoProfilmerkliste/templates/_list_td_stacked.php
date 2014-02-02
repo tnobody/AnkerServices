@@ -1,0 +1,3 @@
+<td colspan="6">
+  <?php echo __('%%merklisten_id%% - %%query%% - %%angelegt%% - %%letzte_aenderung%% - %%sf_guard_user_id%% - %%profil_id%%', array('%%merklisten_id%%' => link_to($profil_merkliste->getMerklistenId(), 'profil_merkliste_edit', $profil_merkliste), '%%query%%' => $profil_merkliste->getQuery(), '%%angelegt%%' => false !== strtotime($profil_merkliste->getAngelegt()) ? format_date($profil_merkliste->getAngelegt(), "f") : '&nbsp;', '%%letzte_aenderung%%' => false !== strtotime($profil_merkliste->getLetzteAenderung()) ? format_date($profil_merkliste->getLetzteAenderung(), "f") : '&nbsp;', '%%sf_guard_user_id%%' => $profil_merkliste->getSfGuardUserId(), '%%profil_id%%' => $profil_merkliste->getProfilId()), 'messages') ?>
+</td>

@@ -1,0 +1,23 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/12-Filters
+
+rendering:
+  class: myRenderingFilter
+security:  ~
+
+# insert your own filters here
+redirectOnWrongCredentials:
+  # Filters need a unique name
+  class: redirectOnWrongCredentialsFilter
+  param: ~
+  
+ajaxSessionTimeoutFilter:
+  # Filters need a unique name
+  class: ajaxSessionTimeoutFilter
+  param: ~
+  
+# if you insert a new filter here dont forget to update the filter.yml files of
+# the modules
+
+cache:     ~
+execution: ~

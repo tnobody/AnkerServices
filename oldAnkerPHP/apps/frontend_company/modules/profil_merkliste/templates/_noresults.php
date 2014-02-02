@@ -1,0 +1,1 @@
+<h4>Keine Favoriten vorhanden</h4>
