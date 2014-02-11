@@ -5,13 +5,16 @@ require.config({
         'bootstrap':        'lib/bootstrap.min',
         'angular':          'lib/angular.min',
         'angular-route':    'lib/angular-route.min',
-        'angularAMD':       'lib/angularAMD.min'
+        'underscore':       'lib/underscore.min'
     },
     shim: {
 //        'angular':          ['jquery'],
-        'angularAMD':       ['angular'], 
         'angular-route':    ['angular'],
         'bootstrap':        ['jquery']
     },
     deps: ['app']
 });
+
+require(['app'], function (app) {
+    angular.bootstrap(document, ['app']);
+})
