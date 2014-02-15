@@ -1,12 +1,10 @@
 /* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * This File setup the Application
  */
-
 define([
-    'angular-route',
     'routes',
-    'app/service/util/DependencyResolver'
+    'app/service/util/DependencyResolver',
+    'angular-route'
 ], function(config, resolver) {
     var app = angular.module('app',['ngRoute']);
     app.config([
@@ -15,8 +13,9 @@ define([
         '$controllerProvider',
         '$compileProvider',
         '$filterProvider',
-        '$provider',
+        '$provide',
         function($routeProvider, $locationProvider, $controllerProvider, $compileProvider, $filterProvider, $provide) {
+            app.autowire = {};
             angular.extend(app, {
                 controller: $controllerProvider.register,
                 directive: $compileProvider.directive,

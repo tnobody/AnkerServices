@@ -1,19 +1,21 @@
-<form role="form"  class="col-xs-6 col-xs-offset-3">
+<form ng-controller="HomeController" class="col-xs-6 col-xs-offset-3">
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        <input type="email" ng-model="user.name" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <input type="password" ng-model="user.password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
-    <div class="checkbox">
+    <div class="checkbox hidden">
         <label>
-            <input type="checkbox"> Check me out
+            <input type="checkbox" > Check me out
         </label>
     </div>
-    <button type="submit" class="btn btn-default">
+    <button type="submit" class="btn btn-default" ng-click="login()">
         <i class="glyphicon glyphicon-log-in"></i>&nbsp;
         Login
     </button>
+    <pre>{{auth|json}}</pre>
+    <pre>{{auth.isAuthenticated()|json}}</pre>
 </form>

@@ -5,7 +5,8 @@ require.config({
         'bootstrap':        'lib/bootstrap.min',
         'angular':          'lib/angular.min',
         'angular-route':    'lib/angular-route.min',
-        'underscore':       'lib/underscore.min'
+        'underscore':       'lib/underscore.min',
+        'sinon':            'lib/sinon'
     },
     shim: {
 //        'angular':          ['jquery'],
@@ -16,5 +17,6 @@ require.config({
 });
 
 require(['app'], function (app) {
+    console.log('MAIN',app);
     angular.bootstrap(document, ['app']);
 })

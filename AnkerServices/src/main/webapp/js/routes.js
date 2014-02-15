@@ -4,7 +4,11 @@ define([], function () {
        routes: {
            '/' : {
                templateUrl: 'html/index.html',
-               dependencies: ['controller/HomeController']
+               dependencies: ['app/controller/HomeController']
+           },
+           '/about' : {
+               templateUrl: 'html/about.html',
+               dependencies: ['app/controller/AboutController']
            }
        }
    } 
