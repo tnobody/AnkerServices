@@ -1,4 +1,8 @@
 <form ng-controller="HomeController" class="col-xs-6 col-xs-offset-3">
+    <div class="alert alert-danger alert-dismissable" ng-show="auth.tries">
+        <i class="glyphicon glyphicon-exclamation-sign"></i>
+        Email  oder Passwort nicht korrekt
+    </div>
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" ng-model="user.name" class="form-control" id="exampleInputEmail1" placeholder="Enter email">

@@ -1,2 +1,6 @@
+com\ankercbt\ankerservices\controller\util\LoginException.class
+com\ankercbt\ankerservices\controller\SecurityController.class
+com\ankercbt\ankerservices\viewmodel\security\LoginVm.class
 com\ankercbt\ankerservices\service\UserServiceImpl.class
+com\ankercbt\ankerservices\viewmodel\security\UserVm.class
 com\ankercbt\ankerservices\service\UserService.class

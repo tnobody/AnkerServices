@@ -6,7 +6,7 @@ define([
     'app/service/util/DependencyResolver',
     'angular-route'
 ], function(config, resolver) {
-    var app = angular.module('app',['ngRoute']);
+    var app = angular.module('app', ['ngRoute']);
     app.config([
         '$routeProvider',
         '$locationProvider',

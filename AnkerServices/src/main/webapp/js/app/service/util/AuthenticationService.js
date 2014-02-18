@@ -9,18 +9,23 @@ define([
         function($http) {
             //local  vars
             return {
-                authenticated: false,
                 user: {},
+                tries: 0,
                 login: function(user, password) {
                     var that = this;
-                    return $http.post('login',
-                            {user: user, password: password}
-                    ).success(function(user) {
-                        that.authenticated = true;
+                    return $http.post('login', {
+                        user: user,
+                        password: password
+                    }).success(function(user) {
+                        user.authenticated = true;
                         that.user = user;
-                        alert('dfgdg');
                     }).error(function() {
-                        that.authenticated = false;
+                        that.tries++;
+                        that.user = {
+                            name: '',
+                            roles: [],
+                            authenticated: false
+                        };
                     });
                 },
                 isAuthenticated: function() {

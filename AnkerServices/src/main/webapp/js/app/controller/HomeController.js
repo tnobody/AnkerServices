@@ -1,7 +1,6 @@
 define([
     'app',
     'app/service/util/AuthenticationService',
-    'app/test/fixtures/Server'
 ], function(app) {
 //    console.log(app.autowire.controller.toString());
     app.controller('HomeController', ['$scope', '$http', 'AuthenticationService', function($scope, $http, AuthenticationService) {
@@ -9,13 +8,16 @@ define([
                 name: '',
                 password: ''
             };
-                $scope.auth = AuthenticationService;
+            $scope.auth = AuthenticationService;
             $scope.login = function() {
-                console.log('Jaeh');
                 AuthenticationService.login(
-                        $scope.user.name,
-                        $scope.user.password
-                        );
+                    $scope.user.name,
+                    $scope.user.password
+                ).success(function() {
+                    window.location.hash = '/admin/students';    
+                }).error(function() {
+                    alert('You are not logged in')
+                });
             }
         }]);
 });

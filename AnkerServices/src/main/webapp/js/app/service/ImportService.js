@@ -13,7 +13,7 @@ ankerServices.service('angular.service.ImportService', [
                 var that = this;
                 context = context || window;
                 patternParts = pattern.split('.');
-                potentialMethod = patternParts[patternParts.length-1];
+                potentialMethod = patternParts[patternParts.length - 1];
                 if (context[method].apply !== undefined) {
                     var tempClosure = context[method];
                     context[method] = function() {
