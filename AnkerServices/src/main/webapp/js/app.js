@@ -23,7 +23,7 @@ define([
                 factory: $provide.factory,
                 service: $provide.service
             });
-            $locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(false);
 
             if (config.routes) {
                 angular.forEach(config.routes, function(route, path) {

@@ -5,11 +5,11 @@
 define([
     'app'
 ], function(app) {
-   app.controller('admin.StudentController' [
-       '$scope', 'AuthorizationService',
-       function($scope, AuthorizationService) {
-           alert('Admin');
-       }
-   ]); 
+    alert('Admin');
+    app.controller('admin.StudentController', [
+        '$scope', 'AuthorizationService',
+        function($scope, AuthorizationService) {
+        }
+    ]);
 });
 

@@ -1,4 +1,6 @@
-define([], function() {
+define([
+    'app/service/util/RouterUtilService'
+], function(router) {
     return {
         defaultRoutePath: '/',
         routes: {
@@ -10,10 +12,7 @@ define([], function() {
                 templateUrl: 'html/about.html',
                 dependencies: ['app/controller/AboutController']
             },
-            '/admin/students' : {
-                templateUrl: 'html/admin/students.html',
-                dependencies: ['app/controller/admin/StudentController']
-            }
+            '/admin/students' : router.create('admin.StudentController')
         }
     }
 });

@@ -2,6 +2,7 @@ define([], function() {
     return function(dependencies) {
         var definition = {
             resolver: ['$q', '$rootScope', function($q, $rootScope) {
+                    console.log('DEP', dependencies);
                     var deferred = $q.defer();
                     require(dependencies, function() {
                         $rootScope.$apply(function() {
