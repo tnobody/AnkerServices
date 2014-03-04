@@ -15,11 +15,11 @@ class Profile {
 	private String geburtsland;
 	private String nationalitaet;
 	private int kontaktadresse;
-	private List<Adressen> adressen;
-	private List<Dokumente> dokumente;
-	private List<Niveaus> niveaus;
-	private List<Lebenslauf> lebenslaeufe;
-	private List<ProfilMerkliste> profileMerklisten;
+    private List<Address> adressen;
+    private List<Dokumente> dokumente;
+    private List<Niveaus> niveaus;
+    private List<Lebenslauf> lebenslaeufe;
+    private List<ProfilMerkliste> profileMerklisten;
 	private List<Verfuegbarkeit> verfuegbarkeiten;
 
     public String getVornamen() {
@@ -110,12 +110,12 @@ class Profile {
         this.kontaktadresse = kontaktadresse;
     }
 
-    public List<Adressen> getAdressen() {
+    public List<Address> getAddreses() {
         return adressen;
     }
 
-    public void setAdressen(List<Adressen> adressen) {
-        this.adressen = adressen;
+    public void setAddreses(List<Address> addreses) {
+        this.adressen = addreses;
     }
 
     public List<Dokumente> getDokumente() {
