@@ -22,7 +22,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+        </dependency>   
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency> 
+        
         <!-- Spring Data Component for MongoDB -->
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -40,7 +45,7 @@
             <artifactId>joda-time</artifactId>
             <version>2.3</version>
         </dependency>
-
+      
     </dependencies>
 
     <!-- Package as an executable JAR -->
@@ -134,6 +139,11 @@
 
                             <!--<downloadPath>http://internal-mongo-repo/</downloadPath>-->
                             <!-- optional, default is http://fastdl.mongodb.org/ -->
+                            
+                            <!-- uncomment this if u'r outside of ConSol* Network ;) -->
+                            <proxyHost>proxy.consol.de</proxyHost>
+                            <proxyPort>8001</proxyPort>
+                            
                         </configuration>
                     </execution>
                     <execution>
