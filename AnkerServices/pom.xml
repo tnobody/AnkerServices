@@ -141,8 +141,8 @@
                             <!-- optional, default is http://fastdl.mongodb.org/ -->
                             
                             <!-- uncomment this if u'r outside of ConSol* Network ;) -->
-                            <proxyHost>proxy.consol.de</proxyHost>
-                            <proxyPort>8001</proxyPort>
+                            <!--<proxyHost>proxy.consol.de</proxyHost>-->
+                            <!--<proxyPort>8001</proxyPort>-->
                             
                         </configuration>
                     </execution>
