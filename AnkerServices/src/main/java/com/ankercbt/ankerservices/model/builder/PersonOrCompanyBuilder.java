@@ -25,4 +25,5 @@ public abstract class PersonOrCompanyBuilder<PC extends PersonOrCompany> extends
         entity.setAddresses(addresses);
         return this;
     }
+
 }

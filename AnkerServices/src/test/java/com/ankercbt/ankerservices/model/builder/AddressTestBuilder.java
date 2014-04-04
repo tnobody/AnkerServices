@@ -13,7 +13,7 @@ public class AddressTestBuilder extends AddressBuilder {
             withAlias("Hauptwohnsitz");
         }
         if (entity.getStreet() == null) {
-            withStreet("Ingolstädter Straße 1.");
+            withStreet("Ingolstädter Straße 1");
         }
         if (entity.getZip() == null) {
             withZip("81673");

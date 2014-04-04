@@ -1,9 +1,7 @@
 package com.ankercbt.ankerservices.model;
 
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
-public class Address extends AsEntity {
+public class Address implements AsEntity {
     private String alias;
     private String street;
     private String zip;
@@ -57,5 +55,17 @@ public class Address extends AsEntity {
 
     public void setPrimary(boolean primary) {
         this.primary = primary;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "alias='" + alias + '\'' +
+                ", street='" + street + '\'' +
+                ", zip='" + zip + '\'' +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                ", primary=" + primary +
+                '}';
     }
 }

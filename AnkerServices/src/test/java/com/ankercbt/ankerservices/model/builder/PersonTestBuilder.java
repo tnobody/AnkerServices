@@ -37,6 +37,9 @@ public class PersonTestBuilder extends PersonBuilder {
         if (entity.getAddresses() == null) {
             addAddress(new AddressTestBuilder().build());
         }
+        if (entity.getEmailAddress() == null) {
+            entity.setEmailAddress("test@ankerservices.de");
+        }
         return super.build();
     }
 

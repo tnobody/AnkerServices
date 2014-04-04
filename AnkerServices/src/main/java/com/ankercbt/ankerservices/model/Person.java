@@ -72,4 +72,17 @@ public class Person extends PersonOrCompany {
     public void setNationality(String nationality) {
         this.nationality = nationality;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" + super.toString() +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthday=" + birthday +
+                ", sex=" + sex +
+                ", placeOfBirth='" + placeOfBirth + '\'' +
+                ", countryOfBirth='" + countryOfBirth + '\'' +
+                ", nationality='" + nationality + '\'' +
+                '}';
+    }
 }
