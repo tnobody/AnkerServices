@@ -1,10 +1,11 @@
-package com.ankercbt.ankerservices.persistence;
+package com.ankercbt.ankerservices.integration.persistence;
 
 import com.ankercbt.ankerservices.model.Address;
 import com.ankercbt.ankerservices.model.Person;
 import com.ankercbt.ankerservices.model.builder.PersonTestBuilder;
-import org.junit.Assert;
-import org.junit.Test;
+import com.ankercbt.ankerservices.persistence.PersonRepository;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -38,11 +39,12 @@ public class PersonRepositoryTest extends BaseRepositoryTest<PersonRepository> {
     }
 
     private void assertAddress(Address address) {
-        Assert.assertEquals("Hauptwohnsitz", address.getAlias());
-        Assert.assertEquals("Ingolstädter Straße 1", address.getStreet());
-        Assert.assertEquals("81673", address.getZip());
-        Assert.assertEquals("München", address.getCity());
-        Assert.assertEquals("Deutschland", address.getCountry());
+        Assert.assertEquals(address.getAlias(), "Hauptwohnsitz");
+        //TODO fails on maven - maybe an encoding error in the mongo plugin
+        Assert.assertEquals(address.getStreet(), "Ingolstädter Straße 1");
+        Assert.assertEquals(address.getZip(), "81673");
+        Assert.assertEquals(address.getCity(), "München");
+        Assert.assertEquals(address.getCountry(), "Deutschland");
 
     }
 }

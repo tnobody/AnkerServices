@@ -42,7 +42,13 @@ public class IndexController {
     @ResponseBody()
     @RequestMapping("/person/get")
     public List<Person> getPerson() {
-        return personService.getPersonForSurname("Tobi");
+        return personService.getPersonForFirstName("Tobi");
+    }
+
+    @ResponseBody()
+    @RequestMapping("/person/get/all")
+    public List<Person> getAllPersons() {
+        return personService.getAllPersons();
     }
 
     @ResponseBody()

@@ -10,7 +10,9 @@ import java.util.List;
  */
 public interface PersonService {
 
-    List<Person> getPersonForSurname(String firstname);
+    List<Person> getPersonForFirstName(String firstname);
 
     void createPerson(String firstname, String lastname);
+
+    List<Person> getAllPersons();
 }

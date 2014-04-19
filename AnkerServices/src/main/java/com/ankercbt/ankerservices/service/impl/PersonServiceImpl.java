@@ -19,16 +19,30 @@ public class PersonServiceImpl implements PersonService {
     @Autowired
     private PersonRepository personRepository;
 
+    /**
+     * {@inheritDoc} *
+     */
     @Override
-    public List<Person> getPersonForSurname(String firstname) {
+    public List<Person> getPersonForFirstName(String firstname) {
         return personRepository.findAllByFirstName(firstname);
     }
 
+    /**
+     * {@inheritDoc} *
+     */
     @Override
     public void createPerson(String firstname, String lastname) {
         personRepository.save(new PersonBuilder()
                 .withFirstName(firstname)
                 .withLastName(lastname)
                 .build());
+    }
+
+    /**
+     * {@inheritDoc} *
+     */
+    @Override
+    public List<Person> getAllPersons() {
+        return personRepository.findAll();
     }
 }

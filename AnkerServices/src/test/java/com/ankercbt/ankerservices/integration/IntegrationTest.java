@@ -1,4 +1,4 @@
-package com.ankercbt.ankerservices;
+package com.ankercbt.ankerservices.integration;
 
 /**
  * Interface for all integration test.
@@ -8,4 +8,5 @@ package com.ankercbt.ankerservices;
  *         Date: 02.03.14
  */
 public interface IntegrationTest {
+    public static final String GROUP = "integration";
 }

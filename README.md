@@ -1,16 +1,16 @@
 AnkerServices
 =============
 
-AS - WebServer startUps:
+## AS - WebServer startUps:
 
-* Embeded Mongo (stand alone)
-  mvn embedmongo:start -Dembedmongo.wait
+* Embedded Mongo (stand alone)
+  `mvn embedmongo:start -Dembedmongo.wait`
 
 * Server Start (SpringBoot)
-  mvn spring-boot:run
+  `mvn spring-boot:run`
 
 * Only Unit-Tests
-  mvn test
+  `mvn test`
 
-* All-Tests (Unit + Integration Tests)
-  mvn verify
+* All-Tests (Unit + Integration Tests with embedded mongo)
+  `mvn verify`
