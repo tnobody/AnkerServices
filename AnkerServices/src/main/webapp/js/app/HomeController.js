@@ -1,8 +1,7 @@
 define([
-    'app',
-    'app/service/util/AuthenticationService',
+    'org.as/app',
+    'org.as/app/util/security/AuthenticationService',
 ], function(app) {
-//    console.log(app.autowire.controller.toString());
     app.controller('HomeController', ['$scope', '$http', 'AuthenticationService', '$location', function($scope, $http, AuthenticationService, $location) {
             $scope.user = {
                 name: '',
