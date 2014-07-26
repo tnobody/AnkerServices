@@ -36,8 +36,8 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency> 
-        
+        </dependency>
+
         <!-- Spring Data Component for MongoDB -->
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -67,7 +67,7 @@
 
         <!-- Joda - Time Template (maybe remove with Java8 -->
         <dependency>
-        <groupId>joda-time</groupId>
+            <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.3</version>
         </dependency>
@@ -191,11 +191,11 @@
 
                             <!--<downloadPath>http://internal-mongo-repo/</downloadPath>-->
                             <!-- optional, default is http://fastdl.mongodb.org/ -->
-                            
+
                             <!-- uncomment this if u'r outside of ConSol* Network ;) -->
                             <!--<proxyHost>proxy.consol.de</proxyHost>-->
                             <!--<proxyPort>8001</proxyPort>-->
-                            
+
                         </configuration>
                     </execution>
                     <execution>
@@ -208,6 +208,15 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>start-mongo-db-continuously</id>
+            <properties>
+                <embedmongo.wait>true</embedmongo.wait>
+            </properties>
+        </profile>
+    </profiles>
 
     <!-- Allow access to Spring milestones and snapshots -->
     <!-- (you don't need this if you are using anything after 1.0.0.RELEASE) -->
