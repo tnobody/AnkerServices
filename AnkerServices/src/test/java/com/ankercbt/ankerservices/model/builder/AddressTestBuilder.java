@@ -13,13 +13,13 @@ public class AddressTestBuilder extends AddressBuilder {
             withAlias("Hauptwohnsitz");
         }
         if (entity.getStreet() == null) {
-            withStreet("Ingolstädter Straße 1");
+            withStreet("Ingolstaedter Strasse 1");
         }
         if (entity.getZip() == null) {
             withZip("81673");
         }
         if (entity.getCity() == null) {
-            withCity("München");
+            withCity("Muenchen");
         }
         if (entity.getCountry() == null) {
             withCountry("Deutschland");
