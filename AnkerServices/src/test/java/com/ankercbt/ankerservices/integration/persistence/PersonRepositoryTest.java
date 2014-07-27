@@ -41,9 +41,9 @@ public class PersonRepositoryTest extends BaseRepositoryTest<PersonRepository> {
     private void assertAddress(Address address) {
         Assert.assertEquals(address.getAlias(), "Hauptwohnsitz");
         //TODO fails on maven - maybe an encoding error in the mongo plugin
-        Assert.assertEquals(address.getStreet(), "Ingolstädter Straße 1");
+        Assert.assertEquals(address.getStreet(), "Ingolstaedter Strasse 1");
         Assert.assertEquals(address.getZip(), "81673");
-        Assert.assertEquals(address.getCity(), "München");
+        Assert.assertEquals(address.getCity(), "Muenchen");
         Assert.assertEquals(address.getCountry(), "Deutschland");
 
     }

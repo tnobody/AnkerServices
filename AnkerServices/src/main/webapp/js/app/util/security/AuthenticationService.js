@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 define([
-    '../../../app'
+    'org.as/app'
 ], function(app) {
     app.factory('AuthenticationService', ['$http',
         function($http) {

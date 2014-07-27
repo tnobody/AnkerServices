@@ -3,8 +3,8 @@
  * and open the template in the editor.
  */
 define([
-    '../../../app',
-    'AuthenticationService'
+    'org.as/app',
+    'org.as/app/util/security/AuthenticationService'
 ], function(app) {
     app.service('AuthorizationService', [
         'AuthenticationService', 

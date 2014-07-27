@@ -6,11 +6,11 @@ define([
         routes: {
             '/': {
                 templateUrl: 'html/index.html',
-                dependencies: ['app/controller/HomeController']
+                dependencies: ['org.as/app/HomeController']
             },
             '/about': {
                 templateUrl: 'html/about.html',
-                dependencies: ['app/controller/AboutController']
+                dependencies: ['app/AboutController']
             },
             '/admin/students' : router.create('admin.StudentController')
         }

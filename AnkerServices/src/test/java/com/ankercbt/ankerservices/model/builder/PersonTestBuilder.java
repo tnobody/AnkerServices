@@ -17,7 +17,7 @@ public class PersonTestBuilder extends PersonBuilder {
             withFirstName("Hans");
         }
         if (entity.getLastName() == null) {
-            withLastName("Müller");
+            withLastName("Mueller");
         }
         if (entity.getBirthday() == null) {
             withBirthday(new DateTime().minusYears(20).toLocalDate());
@@ -26,7 +26,7 @@ public class PersonTestBuilder extends PersonBuilder {
             withCountryOfBirth("Deutschland");
         }
         if (entity.getPlaceOfBirth() == null) {
-            withPlaceOfBirth("München");
+            withPlaceOfBirth("Muenchen");
         }
         if (entity.getNationality() == null) {
             withNationality("Deutsch");

@@ -6,7 +6,8 @@ require.config({
         'angular': 'lib/angular.min',
         'angular-route': 'lib/angular-route.min',
         'underscore': 'lib/underscore.min',
-        'sinon': 'lib/sinon'
+        'sinon': 'lib/sinon',
+        'org.as' : './'
     },
     shim: {
 //        'angular':          ['jquery'],
